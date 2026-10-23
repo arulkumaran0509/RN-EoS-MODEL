@@ -9,6 +9,11 @@ dist/
 web-build/
 expo-env.d.ts
 
+# build output
+/build/
+/coverage/
+.gradle/
+
 # Native
 .kotlin/
 *.orig.*
@@ -25,12 +30,18 @@ expo-env.d.ts
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
+logs/
 
 # macOS
 .DS_Store
 *.pem
 
 # local env files
+.env
+.env.*
+!.env.example
+!.env.*.example
 .env*.local
 
 # typescript
